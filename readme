@@ -1,0 +1,41 @@
+npm init
+npm i
+npm i expres
+npm i mysql2
+
+#### sequelize install ####
+### npm i sequelize ###
+# npm install --save-dev sequelize-cli
+# npx sequelize-cli init
+
+
+add server.js file 
+ npm i nodemon
+ add run dev to scripts
+    "dev": "nodemon server.js"
+
+set routes folder and basic route
+set routes for each request
+create Controllers Folder
+create controller file for each route group
+
+
+#### create a table ####
+# npx sequelize-cli model:generate --name TABLE_NAME --attributes ATTRIBUTE_NAME:TYPE
+npx sequelize-cli model:generate --name Sliders --attributes title:string,description:string,image:string
+
+#### deploy to database ####
+# npx sequelize-cli db:migrate
+
+#### craete test data ####
+# npx sequelize-cli seed:generate --name demo-TABLE_NAME
+# npx sequelize-cli db:seed:all
+
+
+
+
+npx sequelize-cli model:generate --name Actions --attributes title:string,description:string,image:string,hasAction:boolean,actionUrl:string
+
+npx sequelize-cli model:generate --name OnlineShopMembers --attributes userId:string,role:string,modules:string,status:string
+
+npx sequelize-cli model:generate --name CategoryTags --attributes name:string,categoryId:string
